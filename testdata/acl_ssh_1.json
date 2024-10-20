@@ -1,0 +1,13 @@
+{
+  "groups": {
+    "group:admins": ["u1@github", "u2@github"]
+  },
+  "ssh": [
+    {
+      "action": "accept",
+      "src": ["group:admins"],
+      "dst": ["tag:prod"],
+      "users": ["root", "autogroup:nonroot"]
+    }
+  ]
+}

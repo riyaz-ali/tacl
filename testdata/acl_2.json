@@ -1,0 +1,16 @@
+{
+  "grants": [
+    {
+      "src": ["group:admin"],
+      "dst": ["tag:fileserver"],
+      "app": {
+        "tailscale.com/cap/drive": [
+          { "shares":  ["*"], "access":  "rw" }
+        ]
+      }
+    }
+  ],
+  "groups": {
+    "group:admin": ["u1", "u2"]
+  }
+}
